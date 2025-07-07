@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup  
 import json
 
-url = "https://books.toscrape.com/"
+url = "https://www.daraz.com.np/"
 
 def scrape_books(url):
     response = requests.get(url)
