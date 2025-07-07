@@ -1,7 +1,22 @@
-import csv
+# scrapper-py > ...
+# go to git bash
+
+# git config • global user name "
+
+# same with gmail
+# homeworkpy
+# 
+# git init git
+# status => if you want to check what thestatus of files is
+# git add.
+# git commit -m "your message here"
+# copy paste git code from git hub
+# git push =› to send
+from bs4 import Beautifulsoup
+
 import requests  
 from bs4 import BeautifulSoup  
-
+import csv
 
 url = "https://books.toscrape.com/"
 
@@ -26,7 +41,7 @@ def scrape_books(url):
     # Save to CSV file
     with open("books.csv", "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Title", "Currency", "Price"]) 
+        writer.writerow(["Title", "Currency", "Price"])  # Header row
         writer.writerows(books)
 
     print("Data has been written to books.csv")
